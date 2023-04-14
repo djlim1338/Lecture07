@@ -51,4 +51,25 @@
         android:text="@string/btn_lec07_exam06"
         android:layout_margin="10dp"/>
 
+    <Button
+        android:id="@+id/btn_lec07_prac01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_lec07_prac01"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btn_lec07_prac02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_lec07_prac02"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btn_lec07_prac03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_lec07_prac03"
+        android:layout_margin="10dp"/>
+
 </LinearLayout>

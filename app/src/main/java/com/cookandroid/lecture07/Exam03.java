@@ -2,6 +2,7 @@ package com.cookandroid.lecture07;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -20,7 +21,7 @@ public class Exam03 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exam03);
-        setTitle("배경색 바꾸기");
+        setTitle("배경색 바꾸기(컨텍스트 메뉴)");
 
         exam03Layout = (LinearLayout) findViewById(R.id.exam03_layout);
 
@@ -37,41 +38,39 @@ public class Exam03 extends AppCompatActivity {
         MenuInflater mInflater = getMenuInflater();
         if(v == exam03Btn1){
             menu.setHeaderTitle("배경색 변경");
-            mInflater.inflate(R.menu.exam03_menu1, menu);
+
+            menu.add(0, 1, 0, "배경색(빨강)");
+            menu.add(0, 2, 0, "배경색(초록)");
+            menu.add(0, 3, 0, "배경색(파랑)");
+            //mInflater.inflate(R.menu.exam03_menu1, menu);
         }
         if(v == exam03Btn2){
-            mInflater.inflate(R.menu.exam03_menu2, menu);
+            menu.add(0, 4, 0, "버튼 45도 회전");
+            menu.add(0, 5, 0, "버튼 2배 확대");
+            //mInflater.inflate(R.menu.exam03_menu2, menu);
         }
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // TODO Auto-generated method stub
-        super.onCreateOptionsMenu(menu);
-        MenuInflater mInflater = getMenuInflater();
-        mInflater.inflate(R.menu.exam03_menu1, menu);
-        return true;
-    }
-    /*
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.exam02_itemRotate:
-                exam02ImageView1.setRotation(Float.parseFloat(exam02EdtAngle.getText()
-                        .toString()));
+    public boolean onContextItemSelected(MenuItem item){
+        switch(item.getItemId()){
+            case 1:
+                exam03Layout.setBackgroundColor(Color.RED);
                 return true;
-            case R.id.exam02_item1:
-                exam02ImageView1.setImageResource(R.drawable.jeju2);
+            case 2:
+                exam03Layout.setBackgroundColor(Color.GREEN);
                 return true;
-            case R.id.exam02_item2:
-                exam02ImageView1.setImageResource(R.drawable.jeju14);
+            case 3:
+                exam03Layout.setBackgroundColor(Color.BLUE);
                 return true;
-            case R.id.exam02_item3:
-                exam02ImageView1.setImageResource(R.drawable.jeju6);
+            case 4:
+                exam03Btn2.setRotation(45);
+                return true;
+            case 5:
+                exam03Btn2.setScaleX(2);
+                exam03Btn2.setScaleY(2);
                 return true;
         }
         return false;
     }
-
-     */
 }

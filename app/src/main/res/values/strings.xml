@@ -1,10 +1,14 @@
 <resources>
     <string name="app_name">7주차 강의</string>
 
-    <string name="btn_lec07_exam01">연습문제1</string>
-    <string name="btn_lec07_exam02">연습문제2(7-1)</string>
-    <string name="btn_lec07_exam03">연습문제3(메뉴 제작중)</string>
-    <string name="btn_lec07_exam04">연습문제4(대화상자)</string>
-    <string name="btn_lec07_exam05">연습문제5(목록 대화상자 7-18,19,20)</string>
-    <string name="btn_lec07_exam06">연습문제6(Project7_3(51page))</string>
+    <string name="btn_lec07_exam01">실습1</string>
+    <string name="btn_lec07_exam02">실습2(7-1)</string>
+    <string name="btn_lec07_exam03">실습3(project7_2)</string>
+    <string name="btn_lec07_exam04">실습4(대화상자)</string>
+    <string name="btn_lec07_exam05">실습5(목록 대화상자 7-18,19,20)</string>
+    <string name="btn_lec07_exam06">실습6(Project7_3(51page))</string>
+
+    <string name="btn_lec07_prac01">연습문제3~4</string>
+    <string name="btn_lec07_prac02">연습문제5</string>
+    <string name="btn_lec07_prac03">연습문제6</string>
 </resources>
